@@ -64,6 +64,7 @@ public class EmployeeController {
 		return ResponseEntity.ok(updatedEmployee);
 	}
 	
+	// Delete Operation
 	@CrossOrigin(origins = "http://localhost:4200")
 	@DeleteMapping("/employees/{id}")
 	public ResponseEntity<Map<String, Boolean>> deleteEmployee(@PathVariable long id){
